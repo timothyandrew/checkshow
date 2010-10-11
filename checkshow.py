@@ -14,6 +14,10 @@ def request(show):
   
   match = re.search(r'S(..)E(..)',text)
   
+  if(not match):
+    print("Oops. Looks like that show hasn't been created yet.")
+    sys.exit(1)
+  
   print("Latest episode of",origshow,"is",match.group(1)+"x"+match.group(2)+".")
   
 def encode_string(string):
