@@ -1,9 +1,11 @@
 #!/usr/bin/ruby -W0
 
+require "rubygems"
+require "bundler/setup"
 require 'rss/1.0'
 require 'rss/2.0'
 require 'open-uri'
-require 'rubygems'
+
 require 'platform'
 require 'trollop'
 
