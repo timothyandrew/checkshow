@@ -1,23 +1,27 @@
-#Checkshow
+Checkshow
+=========
 Find the latest-available episode of any TV Show
 
-#Installation
-`cd path/to/checkshow.rb`  
+Installation
+=============
+``` bash
+$ cd path/to/checkshow
+$ sudo chmod a+x ./checkshow.rb
+$ ./checkshow.rb --help
+```
 
-`cp checkshow.rb checkshow`  
+Usage
+=====
+```bash
+$ ./checkshow.rb [-c] -s <show_name>
+```
 
-`sudo cp checkshow /usr/bin`  
+If the -c flag is set, a torrent link for the newest episode of the TV Show is copied to the clipboard. **(OS X only.)** 
 
-`sudo chmod a+x /usr/bin/checkshow`  
-
-#Usage
-`checkshow [-c] -s <show_name>`
-
-If the -c flag is set, a torrent link for the newest episode of the TV Show is copied to the clipboard.  
-**OS X only. (for now)** 
-
-#Requirements
-Requires [RubyGems](http://rubygems.org/pages/download), and the following gems: [Platform](http://rubygems.org/gems/Platform), [Trollop](http://rubygems.org/gems/trollop)  
-
-`sudo gem install Platform trollop`
-
+Requirements
+============
+```bash
+$ gem install bundler
+$ cd path/to/checkshow
+$ bundle install
+```
